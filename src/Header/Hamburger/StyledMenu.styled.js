@@ -6,15 +6,15 @@ const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   position: absolute;
-  height: ${({ scroll }) => scroll < 50 ? "900%" : "1200%"};
+  height: ${({ scroll }) => scroll < 60 ? "900%" : "1200%"};
   width: 250px;
-  padding-left:${({ scroll }) => scroll < 50 ? "75px" : "93.5px"};
-  padding-top:${({ scroll }) => scroll < 50 ? "0px" : "19px"};
+  padding-left:${({ scroll }) => scroll < 60 ? "75px" : "93.5px"};
+  padding-top:${({ scroll }) => scroll < 60 ? "0px" : "19px"};
   text-align: left;
-  top: ${({ scroll }) => scroll < 50 ? "81px" : "62px"};
+  top: ${({ scroll }) => scroll < 60 ? "81px" : "62px"};
   border-right:solid 2px;
-  border-color: ${({ scroll }) => scroll < 50 ? "black" : "gray"};
-  transition:  0.2s ease-in;
+  border-color: ${({ scroll }) => scroll < 60 ? "black" : "gray"};
+  transition:  0.2s ease-out;
   transform: ${({ open }) => open ? 'translateX(4%)' : 'translateX(-120%)'};
 
   a {
@@ -27,6 +27,7 @@ const StyledMenu = styled.nav`
     transition: color 0.3s linear;
     &:hover {
       text-decoration: underline;
+      color:gray;
     }
   }
 `;

@@ -1,12 +1,11 @@
-import Danny from '.././DannyBuscemi.jpg'
-
 export default function LogoSlogan() {
     return(
         <>
             <div className = "SloganLogo">
-                <div>
-                    <div className = "Centered">Hello</div>
-                </div>
+                    <div className = "SloganLogo content">
+                        REALLY COOL CONTENT<br/>
+                        WE COOK THE GOOD STUFF
+                    </div>   
             </div>
         </>
     )

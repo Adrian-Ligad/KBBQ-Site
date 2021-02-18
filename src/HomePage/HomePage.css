@@ -1,36 +1,33 @@
 .HomePage {
-    position: static;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
 }
 
 .SloganLogo {
     background: url('../DannyBuscemi.jpg');
-    overflow: hidden;
-    position: static;
     height: 100vh;
     width: 100%;
-    opacity: .4;
+    opacity: 1;
+    overflow: auto;
 }
 
-.SloganLogo:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.7);
-}
-.Centered {
-    position: absolute;
-    color: black;
-    opacity: 1;
-    font-size: 100px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.SloganLogo .content {
+    font-size: 50px;
+    word-spacing: 50px;
+    line-height:100px;
+    position: absolute; /* Position the background text */
+    top: 10%; /* At the bottom. Use top:0 to append it to the top */
+    align-items: center;
+    text-align: center;
+    height:60%;
+    background: rgba(0, 0, 0, .5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding-top: 15%; /* Some padding */
+  }
+
+  .Home_About {
+      font-size: 50px;
   }

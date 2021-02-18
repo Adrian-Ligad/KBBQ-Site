@@ -3,10 +3,10 @@ import styled, { css } from 'styled-components'
 const Header = styled.div`
     font-size: 14px;
     border-bottom: solid;
-    border-color: ${({ scroll  }) => scroll < 50 ?  "black" : "maroon"};
-    border-width: ${({ scroll  }) => scroll < 50 ?  "1px" : "2px"};
-    background-color: ${({ scroll  }) => scroll < 50 ?  "white" : "black"};
-    transition: .2s ease-in;
+    border-color: ${({ scroll  }) => scroll < 60 ?  "black" : "maroon"};
+    border-width: ${({ scroll  }) => scroll < 60 ?  "1px" : "2px"};
+    background-color: ${({ scroll  }) => scroll < 60 ?  "white" : "black"};
+    transition: .2s ease-out;
     position: fixed;
     height:60px;
     top: 0;
@@ -16,7 +16,7 @@ const Header = styled.div`
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    padding:${( { scroll }) => scroll < 50 ? "10px" : "0px"};
+    padding:${( { scroll }) => scroll < 60 ? "10px" : "0px"};
 
 `
 //css for combining
@@ -33,7 +33,7 @@ const RightSide = css`
     width: 50%;
 `
 const StaticText = css`
-    color: ${( { scroll } ) => scroll < 50 ? "gray" : "white"};
+    color: ${( { scroll } ) => scroll < 60 ? "gray" : "white"};
 `
 
 //combined stylings and css
