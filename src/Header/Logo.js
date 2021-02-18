@@ -1,7 +1,8 @@
+import Danny from '.././DannyBuscemi.jpg'
+
 export default function Logo() {
     return (
-        <div className = "Logo">
-            image
-        </div>
+            <img className = "Logo" src = {Danny} alt = "DannyBuscemi">
+            </img>
     )
 }

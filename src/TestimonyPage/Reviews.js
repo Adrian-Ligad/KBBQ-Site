@@ -1,7 +1,7 @@
-export default function Reviews() {
+export default function TestimonyPage() {
     return (
         <div>
-            Reviews
+            Testimonies
         </div>
     )
 }

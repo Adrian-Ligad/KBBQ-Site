@@ -1,13 +1,19 @@
-import Header from '../Header/Header'
-import Content from './Content'
+import LogoSlogan from './LogoSlogan'
+import Announcements from './Announcements'
+import About from './About_Home'
+import Location from '../Integrations/Location'
+import Testimonials from './Testi_Home'
 
 import './HomePage.css'
 
 export default function HomePage() {
     return (
         <div className = "HomePage">
-            <Header/>  
-            <Content/>
+            <LogoSlogan/>
+            <Announcements/>
+            <About/>
+            <Location/>
+            <Testimonials/>
         </div>
     )
 }
