@@ -1,26 +1,20 @@
 import {Squash as Hamburger} from 'hamburger-react'
-import { useState } from 'react'
 
-import HamMenu from './HamMenu'
+import { HamburgerHolder } from '../Header.styled'
 
-export default function Ham () {
-    const [isOpen, setOpen] = useState(false)
 
-    const closeMenu = () => {
-        setOpen(false);
+export default function Ham ({ scroll,isOpen, setOpen }) {
+    const isScrolled = () => {
+        return scroll < 50 ? "black" : "white"
     }
+
     return (
-        <div className = "Hamburger">
-            <Hamburger size = "20" easing="ease-in"  duration={0.2} toggled={isOpen} toggle={setOpen} distance="lg" 
-                onToggle = { toggled => {
-                    if(toggled) {
-                        setOpen(true)
-                    } else {
-                        setOpen(false)
-                    }
-                }}
-            ></Hamburger>
-            <HamMenu isOpen = {isOpen} closeMenu = {closeMenu}/>
-        </div>
+        <HamburgerHolder>
+            <Hamburger className = "Hamburger" size = "20" easing="ease-in"  duration={ 0.2 } toggled={isOpen} toggle={ setOpen } distance="lg" 
+                onToggle = {toggled => {if(toggled){setOpen(true)} else{setOpen(false)}}}
+                color = {isScrolled()}
+            >
+            </Hamburger>
+        </HamburgerHolder>
     )
 }

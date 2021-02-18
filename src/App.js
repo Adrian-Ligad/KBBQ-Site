@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 
+import { GlobalStyles } from './global';
 
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
@@ -22,27 +23,28 @@ class App extends Component {
 
   render() {
     return(
-      <div className = "App">
-        <Header/>
-        <Switch>
-          <Route path = "/About">
-            <AboutPage/>
-          </Route>
-          <Route path = "/Contact">
-            <ContactPage/>
-          </Route>
-          {/* <Route path = "/MenuPage">
-            <MenuPage/>
-          </Route> */}
-          <Route path = "/Testimonies">
-            <TestimonyPage/>
-          </Route>
-          <Route path = "/">
-            <HomePage/>
-          </Route>
-        </Switch>
-        <Footer/>
-      </div>
+        <div className = "App">
+            <GlobalStyles />
+            <Header/>
+          <Switch>
+            <Route path = "/About">
+              <AboutPage/>
+            </Route>
+            <Route path = "/Contact">
+              <ContactPage/>
+            </Route>
+            {/* <Route path = "/MenuPage">
+              <MenuPage/>
+            </Route> */}
+            <Route path = "/Testimonies">
+              <TestimonyPage/>
+            </Route>
+            <Route path = "/">
+              <HomePage/>
+            </Route>
+          </Switch>
+          <Footer/>
+        </div>  
     )
   }
 }
