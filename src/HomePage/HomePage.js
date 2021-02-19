@@ -1,6 +1,6 @@
 import LogoSlogan from './LogoSlogan'
 import About from './About_Home'
-import Location from '../Integrations/Location'
+import Location from './HomeLocation'
 import Testimonials from './Testi_Home'
 
 import './HomePage.css'

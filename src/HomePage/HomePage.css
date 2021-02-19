@@ -1,33 +1,72 @@
+.container {
+  display: flex;
+  position: relative;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.Parallax {
+  width: 100%;
+  display:block;
+  background-attachment: fixed;
+  background-size:  50% 100%;
+}
+
 .HomePage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.SloganLogo {
-    background: url('../DannyBuscemi.jpg');
-    height: 100vh;
-    width: 100%;
-    opacity: 1;
-    overflow: auto;
+.DannyImage {
+  opacity:0.6;
+  width:100%;
+  height:50em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.SloganLogo .content {
-    font-size: 50px;
-    word-spacing: 50px;
-    line-height:100px;
-    position: absolute; /* Position the background text */
-    top: 10%; /* At the bottom. Use top:0 to append it to the top */
-    align-items: center;
-    text-align: center;
-    height:60%;
-    background: rgba(0, 0, 0, .5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-    width: 100%; /* Full width */
-    padding-top: 15%; /* Some padding */
-  }
+.SlogoLogan {
+  top: 8em;
+  font-size: 50px;
+  text-align: center;
+  align-items: center;
+  width:100%;
+}
 
-  .Home_About {
-      font-size: 50px;
-  }
+.imgContainer {
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30em;
+}
+
+.FireFighterImage {
+  background-image:url('../firefighter.jpg');
+}
+
+.SteveDevito {
+  background-image:url('../SteveDevito.jpg');
+}
+
+.AboutHome {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height:auto;
+  font-size: 18px;
+  color:white;
+  width:auto;
+  background-color: black;
+  opacity: 1;
+}

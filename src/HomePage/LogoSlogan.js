@@ -1,12 +1,13 @@
+import Danny from '.././DannyBuscemi.jpg'
+
 export default function LogoSlogan() {
     return(
-        <>
-            <div className = "SloganLogo">
-                    <div className = "SloganLogo content">
+            <div className = "container">
+                    <img className = "DannyImage" src = {Danny} alt = "DannyBuscemi"></img>
+                    <div className = "SlogoLogan content">
                         REALLY COOL CONTENT<br/>
                         WE COOK THE GOOD STUFF
                     </div>   
             </div>
-        </>
     )
 }
