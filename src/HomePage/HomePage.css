@@ -1,6 +1,12 @@
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* About Home Page */
 .container {
   display: flex;
-  position: relative;
   width:100%;
   justify-content: center;
   align-items: center;
@@ -17,12 +23,6 @@
   display:block;
   background-attachment: fixed;
   background-size:  50% 100%;
-}
-
-.HomePage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .DannyImage {
@@ -69,4 +69,38 @@
   width:auto;
   background-color: black;
   opacity: 1;
+}
+
+/* Location Home Page */ 
+.HomeLocation {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 20em;
+  margin: 20px 10px;
+  width:100%;
+}
+
+.GoogleMapsHome {
+  width:40%;
+}
+
+.HoursContainer {
+  width:40%;
+  text-align: center;
+}
+
+.HoursHeader {
+  position: static;
+  font-size:25px;
+  font-weight: 900;
+}
+
+.HoursContent {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  height:100%;
+  justify-content: space-evenly;
 }
