@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledMenu = styled.nav`
-  z-index:100;
+  z-index:50;
   background-color:white;
   display: flex;
   flex-direction: column;

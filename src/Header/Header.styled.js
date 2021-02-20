@@ -1,4 +1,7 @@
 import styled, { css } from 'styled-components'
+
+import dannyLogo from '../DannyBuscemi.jpg'
+
 //different stylings
 const Header = styled.div`
     font-size: 14px;
@@ -19,6 +22,14 @@ const Header = styled.div`
     padding:${( { scroll }) => scroll < 60 ? "10px" : "0px"};
 
 `
+
+const LogoPic = styled.div`
+    background-image:url(${dannyLogo});
+    width:100px;
+    height:100%;
+    background-size:cover;
+`
+
 //css for combining
 const SideHeaders = css`
     display: flex;
@@ -54,4 +65,4 @@ const Location = styled.a`
 const HamburgerHolder = styled.div`${SideHeaders} flex-direction: column;`
 
 const Contact_Us = styled.div`${StaticText}`
-export { Header, LeftSide_Header, RightSide_Header, Business_Hours, Contact_Us, Location, HamburgerHolder }
+export { Header, LeftSide_Header, RightSide_Header, Business_Hours, Contact_Us, Location, HamburgerHolder, LogoPic }

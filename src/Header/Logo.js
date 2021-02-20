@@ -1,7 +1,11 @@
-import Danny from '.././DannyBuscemi.jpg'
+import { Link } from 'react-router-dom'
+import { LogoPic } from './Header.styled'
 
-export default function Logo() {
+export default function Logo({ closeMenu }) {
     return (
-            <img className = "Logo" src = {Danny} alt = "DannyBuscemi"></img>
+        <Link to = "/"  onClick = {() => closeMenu()}> 
+            <LogoPic>
+            </LogoPic>
+        </Link>
     )
 }

@@ -2,19 +2,17 @@ import { useRef, useState, useEffect } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { useOnClickOutside } from './Header/Hamburger/hooks';
 
-import { GlobalStyles } from './global';
-
 import Header from './Header/Header'
-import Footer from './Footer/Footer'
 import AboutPage from './AboutPage/AboutPage'
 import ContactPage from './ContactPage/ContactPage'
 // import MenuPage from './MenuPage/MenuPage.js'
 import TestimonyPage from './TestimonyPage/TestimonyPage'
 import HomePage from './HomePage/HomePage'
 
+import { GlobalStyles } from './global';
 import './App.css'
 
-function App() {
+export default function App() {
 //handles scroll and position location
   const [scroll, setScroll] = useState(window.scrollY);
   const handleScroll = () => setScroll(window.scrollY);
@@ -46,9 +44,6 @@ function App() {
           <HomePage/>
         </Route>
       </Switch>
-      <Footer/>
     </div>  
   )
 }
-
-export default App;

@@ -8,7 +8,7 @@ export default function HomeAbout() {
             <div className = "AboutHome content">
                 <div>//Small About Page Here//</div>
                 <div>Here we make the good stuff</div>
-                <div>A classic way to make kbbq</div>
+                <div>KBBQ Danny Buscemi Style</div>
                 <div>Just look at his eyes- so dreamy!</div>
                 <div>Maybe implement a gallery as image in the back</div>
                 <div>Clickable to expand</div>

@@ -6,7 +6,7 @@ export default function LogoSlogan() {
                     <img className = "DannyImage" src = {Danny} alt = "DannyBuscemi"></img>
                     <div className = "SlogoLogan content">
                         REALLY COOL CONTENT<br/>
-                        WE COOK THE GOOD STUFF
+                        DANNY BUSCEMI ROCKS
                     </div>   
             </div>
     )

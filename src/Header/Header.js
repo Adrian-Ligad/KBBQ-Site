@@ -1,5 +1,3 @@
-import { useState, useEffect } from 'react'
-
 import Logo from './Logo'
 import SocialMedia from '../Integrations/SocialMedia'
 import Ham from './Hamburger/Hamburger'
@@ -16,7 +14,7 @@ export default function HeaderArea({ node, scroll , setOpen , isOpen , closeMenu
             <LeftSide_Header>
                 <Ham scroll = {scroll} setOpen = {setOpen} isOpen = {isOpen}/>
                 <HamMenu scroll = {scroll} isOpen = {isOpen} closeMenu = {closeMenu}/>
-                <Logo/>
+                <Logo closeMenu = {closeMenu}/>
             </LeftSide_Header>
             <RightSide_Header>
                 <Business_Hours scroll = {scroll}>
