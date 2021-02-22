@@ -1,19 +1,21 @@
 import styled from 'styled-components';
 
+const scrollChangeSize = 70;
+
 const StyledMenu = styled.nav`
   z-index:50;
   background-color:white;
   display: flex;
   flex-direction: column;
   position: absolute;
-  height: ${({ scroll }) => scroll < 60 ? "900%" : "1200%"};
+  height: ${({ scroll }) => scroll < scrollChangeSize ? "900%" : "1200%"};
   width: 250px;
-  padding-left:${({ scroll }) => scroll < 60 ? "75px" : "93.5px"};
-  padding-top:${({ scroll }) => scroll < 60 ? "0px" : "19px"};
+  padding-left:${({ scroll }) => scroll < scrollChangeSize ? "75px" : "93.5px"};
+  padding-top:${({ scroll }) => scroll < scrollChangeSize ? "0px" : "19px"};
   text-align: left;
-  top: ${({ scroll }) => scroll < 60 ? "81px" : "62px"};
-  border-right:solid 2px;
-  border-color: ${({ scroll }) => scroll < 60 ? "black" : "gray"};
+  top: ${({ scroll }) => scroll < scrollChangeSize ? "81px" : "62px"};
+  border-right:solid 1px;
+  border-color:"#2F4F4F";
   transition:  0.2s ease-out;
   transform: ${({ open }) => open ? 'translateX(4%)' : 'translateX(-120%)'};
 
