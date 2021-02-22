@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-import dannyLogo from '../DannyBuscemi.jpg'
+import dannyLogo from '../pictures/DannyBuscemi.jpg'
 
 //different stylings
 const Header = styled.div`
@@ -65,4 +65,5 @@ const Location = styled.a`
 const HamburgerHolder = styled.div`${SideHeaders} flex-direction: column;`
 
 const Contact_Us = styled.div`${StaticText}`
+
 export { Header, LeftSide_Header, RightSide_Header, Business_Hours, Contact_Us, Location, HamburgerHolder, LogoPic }

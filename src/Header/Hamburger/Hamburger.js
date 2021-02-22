@@ -5,7 +5,7 @@ import { HamburgerHolder } from '../Header.styled'
 
 export default function Ham ({ scroll,isOpen, setOpen }) {
     const isScrolled = () => {
-        return scroll < 50 ? "black" : "white"
+        return scroll < 60 ? "black" : "white"
     }
 
     return (

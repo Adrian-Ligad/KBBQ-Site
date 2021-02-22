@@ -1,13 +1,14 @@
 import Description from './DescriptionAbout'
 
-export default function AboutPage() {
+import { AboutPageWrapper, AboutPageStory, AboutPageStoryContent,AboutPageArrowDown } from './AboutPage.styled'
+export default function AboutPage({ scroll }) {
     return(
-        <div>
-            About Page  
+        <AboutPageWrapper>
+            <AboutPageStory>
+                <AboutPageStoryContent scroll = {scroll}>About</AboutPageStoryContent>
+                <AboutPageArrowDown scroll = {scroll}>↡</AboutPageArrowDown>
+            </AboutPageStory>
             <Description/>
-            <div>
-                PICTURE
-            </div>
-        </div>
+        </AboutPageWrapper>
     )
 }
