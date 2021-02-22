@@ -2,7 +2,6 @@ import { useRef, useState, useEffect } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { useOnClickOutside } from './Header/Hamburger/hooks';
 
-import { FillerDiv } from './Header/FillerDiv.styled'
 import ScrollToTop from './Header/ScrollToTop'
 import Header from './Header/Header'
 import AboutPage from './AboutPage/AboutPage'
@@ -15,8 +14,7 @@ import { GlobalStyles } from './global';
 import './App.css'
 
 export default function App() {
-
-  //handles scroll and position location
+//handles scroll and position location
   const [scroll, setScroll] = useState(window.scrollY);
   const handleScroll = () => setScroll(window.scrollY);
   useEffect(() => { window.addEventListener("scroll", handleScroll); }, []);
@@ -30,8 +28,7 @@ export default function App() {
     <div className = "App">
       <GlobalStyles />
       <ScrollToTop />
-        <FillerDiv scroll = {scroll}/>
-        <Header scroll = {scroll} setOpen = {setOpen} isOpen = {isOpen} closeMenu = {closeMenu} node = {node}/>
+      <Header scroll = {scroll} setOpen = {setOpen} isOpen = {isOpen} closeMenu = {closeMenu} node = {node}/>
       <Switch>
         <Route path = "/About">
           <AboutPage scroll = {scroll}/>

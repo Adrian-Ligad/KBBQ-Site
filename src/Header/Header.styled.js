@@ -2,13 +2,15 @@ import styled, { css } from 'styled-components'
 
 import dannyLogo from '../pictures/DannyBuscemi.jpg'
 const scrollChangeSize = 70;
+
 //different stylings
 const Header = styled.div`
     font-size: 14px;
     border-bottom: solid;
     border-color: ${({ scroll  }) => scroll < scrollChangeSize ?  "black" : "#2F4F4F"};
     border-width: ${({ scroll  }) => scroll < scrollChangeSize ?  "1px" : "2px"};
-    background-color: ${({ scroll  }) => scroll < scrollChangeSize ?  "#808B96" : "black"};
+    background-color: ${({ scroll  }) => scroll < scrollChangeSize ?  "#404040" : "black"};
+    opacity: ${({ scroll}) => scroll < scrollChangeSize ? "0.8" :"1"};
     transition: .2s ease-out;
     position: fixed;
     height:60px;
@@ -44,7 +46,7 @@ const RightSide = css`
     width: 50%;
 `
 const StaticText = css`
-    color: ${( { scroll } ) => scroll < scrollChangeSize ? "black" : "white"};
+    color: ${( { scroll } ) => scroll < scrollChangeSize ? "white" : "white"};
 `
 
 //combined stylings and css

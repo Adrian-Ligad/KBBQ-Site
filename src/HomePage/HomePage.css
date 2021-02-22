@@ -1,15 +1,76 @@
+.filler {
+  background: black;
+  height:100%;  
+  color:white;
+}
+
 .HomePage {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #F5F5F5;
 }
 
 /* About Home Page */
+.HomeButton {
+  letter-spacing: 3px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-style: solid;
+  border-color: white;
+  width:25%;
+  padding:50px;
+  border-radius: 50%;
+  font-weight: bold;  
+  color:white;
+  background:black;
+  text-decoration: underline;
+}
+
+.HomeButton:hover{
+  color:#A38A00;
+  border-color: #A38A00;
+  transition: .3s ease-in;
+}
+
+.HomeButton-alt {
+  letter-spacing: 3px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-style: solid;
+  border-color: black;
+  width:25%;
+  padding:50px;
+  border-radius: 50%;
+  font-weight: bold;  
+  color:black;
+  background:white;
+  text-decoration: underline;
+}
+
+.HomeButton-alt:hover {
+  color:#A38A00;
+  border-color: #A38A00;
+  transition: .3s ease-in;
+}
+
 .container {
   display: flex;
-  width:100%;
   justify-content: center;
   align-items: center;
+  width:100%;
+}
+
+.HomePageContainer {
+  display:flex;
+  flex-direction:row;
+  width:100%;
+}
+
+.HomePageContainerContent {
+  width:50%;
 }
 
 .content {
@@ -19,44 +80,62 @@
 }
 
 .Parallax {
-  width: 100%;
-  display:block;
   background-attachment: fixed;
-  background-size:  50% 100%;
+  width:60%;
+  display: flex;
+  justify-content: center;
 }
 
 .DannyImage {
-  opacity:0.6;
   width:100%;
-  height:50em;
+  height:48em;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .SlogoLogan {
-  top: 8em;
+  top: 2em;
+  opacity:.7;
+  color:white;
+  background:black;
   font-size: 50px;
   text-align: center;
+  border-radius: 100px;
   align-items: center;
-  width:100%;
+  width:50%;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
-.imgContainer {
+.Header2 {
+  font-size:25px;
+  padding-top: 1em;
+}
+
+/* About and Menu Home CSS*/
+.HomeContainer {
   display:flex;
   flex-direction: row;
   width: 100%;
-  height: 30em;
-}
-
-.FireFighterImage {
-  background-image:url('../pictures/firefighter.jpg');
+  height: 20em;
 }
 
 .SteveDevito {
   background-image:url('../pictures/SteveDevito.jpg');
-}
+  background-position: 60% 0;
+  }
 
+.DannyDevitoHot {
+  background-image: url('../pictures/Danny_Devito_themanthemyththelegend.jpg');
+  width:100%;
+  height:100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
 .AboutHome {
   display:flex;
   flex-direction: column;
@@ -71,6 +150,30 @@
   opacity: .7;
 }
 
+.Container25 {
+  background: black;
+  width:30%;
+}
+
+.Container25-alt {
+  background:white;
+  color:black;
+  width:30%;
+}
+
+.Container50 {
+  background:black;
+  width:60%;
+  display: flex;
+  justify-content: center;
+}
+
+.Container50-alt {
+  background:white;
+  width:60%;
+  display: flex;
+  justify-content: center;
+}
 /* Location Home Page */ 
 .HomeLocation {
   background: white;
@@ -80,27 +183,4 @@
   height: 20em;
   margin: 20px 10px;
   width:100%;
-}
-
-.GoogleMapsHome {
-  width:40%;
-}
-
-.HoursContainer {
-  width:40%;
-  text-align: center;
-}
-
-.HoursHeader {
-  position: static;
-  font-size:25px;
-  font-weight: 900;
-}
-
-.HoursContent {
-  font-size: 18px;
-  display: flex;
-  flex-direction: row;
-  height:100%;
-  justify-content: space-evenly;
 }

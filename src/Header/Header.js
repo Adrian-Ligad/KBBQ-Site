@@ -18,16 +18,13 @@ export default function HeaderArea({ node, scroll , setOpen , isOpen , closeMenu
             </LeftSide_Header>
             <RightSide_Header>
                 <Business_Hours scroll = {scroll}>
-                    Business Hours:<br/>
                     Mon-Fri : 9AM - 11PM <br/>
                     Sat-Sun : 9AM - 9PM
                 </Business_Hours>
                 <Contact_Us scroll = {scroll}>
-                    Call us:<br/>
                     (909)631-3417
                 </Contact_Us>
                 <Location href = {location} target = "blank" scroll = {scroll}>
-                    Find us: <br/>
                     12345 Danny Buscemi Avenue<br/>
                     Great People, CA 917deeznuts
                 </Location>

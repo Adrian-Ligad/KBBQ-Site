@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const scrollChangeSize = 70;
 
 const StyledMenu = styled.nav`
+  opacity:1;
   z-index:50;
   background-color:white;
   display: flex;

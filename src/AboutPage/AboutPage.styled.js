@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-import DescriptionAbout from './DescriptionAbout'
-
 import SteveHotty from '../pictures/SteveHotty.jpg'
 
 const AboutPageWrapper = styled.div`
@@ -15,7 +13,7 @@ const AboutPageStory = styled.div`
     background-attachment: fixed;
     background-position: center;
     background-color: gray; 
-    height:700px;
+    height:800px;
     width:100%;
 `
 
@@ -44,7 +42,7 @@ const AboutPageDescription = styled.div`
     width:100%;
     height:70em;
     color:white;
-    background:black;
+    background: #404040;
     display:flex;
     flex-direction:column;
     align-items:center;
