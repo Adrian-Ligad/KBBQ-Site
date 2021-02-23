@@ -7,7 +7,7 @@ export default function Ham ({ isOpen, setOpen }) {
 
     return (
         <HamburgerHolder>
-            <Hamburger className = "Hamburger" size = "20" easing="ease-in"  duration={ 0.2 } toggled={isOpen} toggle={ setOpen } distance="lg" 
+            <Hamburger className = "Hamburger" size = "20"  duration={ 0.2 } toggled={isOpen} toggle={ setOpen } distance="lg" 
                 onToggle = {toggled => {if(toggled){setOpen(true)} else{setOpen(false)}}}
                 color = "white"
             >

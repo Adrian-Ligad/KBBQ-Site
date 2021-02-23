@@ -8,6 +8,8 @@ const AboutPageWrapper = styled.div`
     justify-content:center;
     align-items:center;
 `
+
+//for title page and picture in About Page
 const AboutPageStory = styled.div`
     background-image: url('${SteveHotty}');
     background-attachment: fixed;

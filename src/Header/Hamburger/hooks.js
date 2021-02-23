@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 
+//On click outside of menu, close
 export const useOnClickOutside = (ref, handler) => {
   useEffect(() => {
     const listener = event => {

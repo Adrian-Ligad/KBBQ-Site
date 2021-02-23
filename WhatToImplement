@@ -1,8 +1,0 @@
-Requires:
-:React
-:React-Router
-:Paginatinion
-:Google-integration
-:Yelp-integration
-:login(uploading pictures and announcements)
-:database(mysql)

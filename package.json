@@ -6,6 +6,7 @@
     "google-maps-react": "^2.0.6",
     "hamburger-react": "^2.4.0",
     "react": "^17.0.1",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "^17.0.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
