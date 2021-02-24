@@ -1,5 +1,5 @@
 export default function MenuPage() {
-    return(
+    return (
         <div>
             Menu
         </div>

@@ -7,16 +7,14 @@ const ModalContainer = styled.div`
     left: 0;
     top: 0;
     width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    height: 100vh; /* Full height */
     overflow: hidden; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
     overflow-y: hidden;
     padding-right: 15px; /* Avoid width reflow */
 `
-
 const ModalContent = styled.div`
-    z-index: 2;
     display:flex;
     flex-direction: row;
     justify-content:space-around;
@@ -24,7 +22,7 @@ const ModalContent = styled.div`
     margin: 10% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 90%; /* Could be more or less, depending on screen size */
     align-items:center;
 `
 const CloseButton = styled.span`
@@ -34,8 +32,8 @@ const CloseButton = styled.span`
     color: #aaa;
     font-size: 28px;
     font-weight: bold;
-    transition:0.2s ease-in;
-    &:hover,focus {
+    transition: color 0.2s ease-in;
+    &:hover {
         color: white;
         text-decoration: none;
         cursor: pointer;

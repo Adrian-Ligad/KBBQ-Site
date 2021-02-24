@@ -1,12 +1,11 @@
-import { useRef, useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import { useOnClickOutside } from './Header/Hamburger/hooks';
 
 import ScrollToTop from './Header/ScrollToTop'
 import Header from './Header/Header'
 import AboutPage from './AboutPage/AboutPage'
 import ContactPage from './ContactPage/ContactPage'
-// import MenuPage from './MenuPage/MenuPage.js'
+import MenuPage from './MenuPage/MenuPage.js'
 import TestimonyPage from './TestimonyPage/TestimonyPage'
 import HomePage from './HomePage/HomePage'
 
@@ -19,17 +18,12 @@ export default function App() {
   const handleScroll = () => setScroll(window.scrollY);
   useEffect(() => { window.addEventListener("scroll", handleScroll); }, []);
   
-//handles open close of hamburger
-  const node = useRef();
-  const [isOpen, setOpen] = useState(false)
-  const closeMenu = () => {setOpen(false);}
-  useOnClickOutside(node, () => setOpen(false));
 
   return(
     <div className = "App">
       <GlobalStyles />
       <ScrollToTop />
-      <Header scroll = {scroll} setOpen = {setOpen} isOpen = {isOpen} closeMenu = {closeMenu} node = {node}/>
+      <Header scroll = {scroll}/>
       <Switch>
         <Route path = "/About">
           <AboutPage scroll = {scroll}/>
@@ -37,9 +31,9 @@ export default function App() {
         <Route path = "/Contact">
           <ContactPage/>
         </Route>
-        {/* <Route path = "/MenuPage">
+        <Route path = "/Menu">
           <MenuPage/>
-        </Route> */}
+        </Route>
         <Route path = "/Testimonies">
           <TestimonyPage/>
         </Route>
