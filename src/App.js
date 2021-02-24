@@ -18,6 +18,7 @@ export default function App() {
   const [scroll, setScroll] = useState(window.scrollY);
   const handleScroll = () => setScroll(window.scrollY);
   useEffect(() => { window.addEventListener("scroll", handleScroll); }, []);
+  
 //handles open close of hamburger
   const node = useRef();
   const [isOpen, setOpen] = useState(false)

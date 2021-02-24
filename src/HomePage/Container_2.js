@@ -1,11 +1,11 @@
 import Gallery from '../Integrations/Gallery'
-import { HomePagePics, HomePageCaptions }  from '../pictures/HomePagePics'
 
-export default function Container_2() {
+export default function Container_2({ pictures, captions, changeModalOpen, changeDisplay, display }) {
     return(
         <div className = "container">
             <div className = "HomeContainer">
-                <Gallery pictures = {HomePagePics} captions = {HomePageCaptions}/>      
+                <Gallery pictures = {pictures} captions = {captions} 
+                changeModalOpen = {changeModalOpen} changeDisplay = {changeDisplay} display = {display}/>      
             </div>
         </div>
     )

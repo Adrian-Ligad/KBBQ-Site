@@ -64,6 +64,11 @@ const PolaroidImage = styled.div`
     background-color: white;
     padding: 10px 15px 60px 15px;
     box-shadow: 5px 5px 10px darkgrey;
+    transition: all 0.3s ease-in;
+    &:hover {
+        cursor: pointer;
+        transform:scale(1.15);
+    }
 `
 const Caption = styled.div`
     text-align:center;
