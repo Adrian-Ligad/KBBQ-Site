@@ -8,7 +8,9 @@ export default function Container_5() {
             <div className = "Parallax Container50">
                 <Link className = "HomeButton" to = "/testimonies">Testimonies</Link>
             </div>
-            <div className = "Parallax kbbq9"/>
+            <div className = "Container50">
+            <img src = {kbbq2} alt = "firefighter Danny" width = "400" height = "320"></img>
+            </div>
         </div>
     )
 }
