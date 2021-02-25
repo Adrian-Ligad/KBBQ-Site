@@ -43,8 +43,7 @@ const AboutPageArrowDown = styled(AboutPageStoryContent)`
 const AboutPageDescription = styled.div`
     width:100%;
     height:70em;
-    color:white;
-    background: #404040;
+    background: #F5F5F5;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -67,7 +66,7 @@ const DescriptionContent = styled.div`
     width:40%;
     letter-spacing:2px;
     font-size:18px;
-    color:white;
+    color:black;
 `
 
 export { 
