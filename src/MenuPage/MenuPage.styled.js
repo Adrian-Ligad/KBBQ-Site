@@ -33,6 +33,7 @@ const MenuRow = styled.div`
     display:flex;
     flex-direction:row;
     justify-content:center;
+    padding: 1em 0;
     `
 
 const MenuBox = styled.div`
@@ -40,29 +41,43 @@ const MenuBox = styled.div`
     background:white;
     font-size: 16px;
     line-height: 1.5;
-    padding: 5px;
+    padding: 10px;
+
 `
 
 const MenuBoxAlt = styled(MenuBox)`
-    background:purple;
+    background:black;
+    color:white;
 `
 
 const MenuPicture = styled.div`
     width:35%;
-    background:green;
-    padding: 5px;
+    background-image:url(${({ menuPic}) => `"${menuPic}"`});
+    background-size:cover;
+    background-repeat:no-repeat;
 `
 
-const MenuPictureAlt = styled(MenuPicture)`
-    background:yellow;
+const MenuPictureParallax = styled.div`
+    background-attachment: fixed;
+    background-image:url(${({ menuPic}) => `"${menuPic}"`});
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height: 100%;
 `
 
 const MenuItem = styled.div`
     &::before {
         color: #D1B000;
-        content:${({ menuItemTitle }) => `"${menuItemTitle}"`};
+        content:${({ menuItemTitle }) => menuItemTitle ? `"${menuItemTitle}"` : ""};
     }
 
 `
 
-export { MenuContainer, MenuHeader, MenuContent, MenuRow, MenuBox, MenuBoxAlt, MenuPicture, MenuPictureAlt, MenuItem }
+const ComboHeader = styled.div`
+    font-weight:bold;
+    font-size:16px;
+    color: white;
+`
+
+export { MenuContainer, MenuHeader, MenuContent, MenuRow, MenuBox, MenuBoxAlt, MenuPicture, MenuPictureParallax, MenuItem, ComboHeader }
