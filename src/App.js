@@ -10,7 +10,6 @@ import TestimonyPage from './TestimonyPage/TestimonyPage'
 import HomePage from './HomePage/HomePage'
 
 import { GlobalStyles } from './global';
-import './App.css'
 
 export default function App() {
 //handles scroll and position location
@@ -18,9 +17,8 @@ export default function App() {
   const handleScroll = () => setScroll(window.scrollY);
   useEffect(() => { window.addEventListener("scroll", handleScroll); }, []);
   
-
   return(
-    <div className = "App">
+    <>
       <GlobalStyles />
       <ScrollToTop />
       <Header scroll = {scroll}/>
@@ -41,6 +39,6 @@ export default function App() {
           <HomePage/>
         </Route>
       </Switch>
-    </div>  
+    </>  
   )
 }
