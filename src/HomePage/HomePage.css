@@ -128,16 +128,36 @@
   margin-right: auto;
 }
 
-.kbbq7 {
-  background-image:url('../pictures/kbbq7.jpg');
-  background-size:cover;
+.kbbq9 {
+  background-image:url('../pictures/kbbq9.jpg');
+  background-position: 200% 100%;
+  background-size: contain;
+  filter: contrast(150%) grayscale(50%);
   }
 
-.DannyDevitoHot {
+.kbbq7 {
   background-image: url('../pictures/kbbq7.jpg');
   width:100%;
   height:100%;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  filter: contrast(150%) grayscale(50%);
+}
 
+.kbbq8 {
+  background-image: url('../pictures/kbbq8.jpg');
+  width:100%;
+  height:100%;
+  background-size: contain;
+  background-position: 210% 100%;
+  filter: contrast(150%) grayscale(50%);
+}
+
+.kbbq9 {
+  background-image: url('../pictures/kbbq1.jpg');
+  width:100%;
+  height:100%;
+  background-size: contain;
+  background-position: 210% 100%;
+  filter: contrast(150%) grayscale(50%);
 }
