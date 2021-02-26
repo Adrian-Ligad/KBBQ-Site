@@ -23,16 +23,16 @@ export default function App() {
       <ScrollToTop />
       <Header scroll = {scroll}/>
       <Switch>
-        <Route path = "/About">
+        <Route path = "/about">
           <AboutPage scroll = {scroll}/>
         </Route>
-        <Route path = "/Contact">
+        <Route path = "/contact">
           <ContactPage/>
         </Route>
-        <Route path = "/Menu">
+        <Route path = "/menu">
           <MenuPage/>
         </Route>
-        <Route path = "/Testimonies">
+        <Route path = "/testimonies">
           <TestimonyPage/>
         </Route>
         <Route path = "/">

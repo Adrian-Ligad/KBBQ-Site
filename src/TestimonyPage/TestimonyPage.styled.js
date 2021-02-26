@@ -30,7 +30,7 @@ const TestimonyContent = styled.div`
 `
 //Modal page stylings
 
-const TestiModal = styled.div`
+const TestiGallery = styled.div`
     width: 90%;
     padding: 20px;
 `
@@ -38,7 +38,7 @@ const TestiModal = styled.div`
 //Submissions Page stylings
 
 const TestiSubmission = styled.div`
-    width: 90%;
+    width: 50%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -54,21 +54,38 @@ const TestiSubmissionContent = styled.div`
     padding: 1em;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
 `
 
 const TestiSubmissionColumn = styled.div`
-    background: black;
+    display: flex;
+    flex-direction: column;
+    background: white;
     height: 20em;
-    width: 50%;
+    width: 100%;
+    border: 1px solid black;
+    margin: 0 2px; 
 `
+const TestiSubmissionRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+`
+const TestiInput = styled.textarea`
+    width: 50%;
+    height: 1em;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+`
+
 const TestiSubmit = styled.div`
-    padding-top: 1em;
     display: flex;
     justify-content: center;
 `
 
 export {
-    TestiPage, TestimonyHeader, TestimonyContent, TestiSubmission, TestiModal, TestiSubmissionHeader, TestiSubmissionContent,
-    TestiSubmissionColumn, TestiSubmit
+    TestiPage, TestimonyHeader, TestimonyContent, TestiSubmission, TestiGallery, TestiSubmissionHeader, TestiSubmissionContent,
+    TestiSubmissionColumn, TestiSubmissionRow, TestiInput, TestiSubmit
        }

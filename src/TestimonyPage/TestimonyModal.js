@@ -1,9 +1,9 @@
-import { TestiModal } from './TestimonyPage.styled'
+import { TestiGallery } from './TestimonyPage.styled'
 
 export default  function TestimonyModal() {
     return(
-        <TestiModal>
+        <TestiGallery>
             hello
-        </TestiModal>
+        </TestiGallery>
     )
 }
