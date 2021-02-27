@@ -32,7 +32,7 @@ export default function App() {
         <Route path = "/menu">
           <MenuPage/>
         </Route>
-        <Route path = "/testimonies">
+        <Route path = "/reviews">
           <TestimonyPage/>
         </Route>
         <Route path = "/">

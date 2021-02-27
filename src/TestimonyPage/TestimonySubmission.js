@@ -9,18 +9,20 @@ export default function TestimonySubmission() {
     const [ lName, changeLName ] = useState("")
     const [ review, changeReview ] = useState("")
     
+
     return(
         <TestiSubmission>
             <TestiSubmissionHeader>
-                Want your opinion to be shared? Submit your reviews here!
             </TestiSubmissionHeader>
             <TestiSubmissionContent>
                 <form style = {{width: "100%"}}>
                     <TestiSubmissionColumn>
                         <TestiSubmissionRow>
-                            <TestiInput type = "text" id = "fname" name = "fname" placeholder = "First Name" required
+                            <TestiInput type = "text" id = "fname" name = "fname" placeholder = "First Name" value = {fName} 
+                            onChange = {( event ) => changeFName(event.target.value)} required 
                             />
-                            <TestiInput type = "text" id = "lname" name = "lname" placeholder = "Last Name" required
+                            <TestiInput type = "text" id = "lname" name = "lname" placeholder = "Last Name" value = {lName} 
+                            onChange = {( event ) => changeLName(event.target.value)} required
                             />
                         </TestiSubmissionRow>
                         <TestiSubmissionRow>
@@ -28,15 +30,16 @@ export default function TestimonySubmission() {
                             />
                         </TestiSubmissionRow>
                         <TestiSubmissionRow>
-                            <textarea type = "text" id = "review" name = "review" placeholder = "Fill me in!" 
-                                style = {{height: "15em", width: "95%"}} required
+                            <TestiInput type = "text" id = "review" name = "review" placeholder = "Fill me in!" value = {review}
+                                style = {{height: "12em", width: "95%"}}  
+                                onChange = {( event ) => changeReview(event.target.value)} required
                             />
                         </TestiSubmissionRow>
                     </TestiSubmissionColumn>
                 </form>
             </TestiSubmissionContent>
             <TestiSubmit>
-                <button>Submit</button>
+                Submit
             </TestiSubmit>
         </TestiSubmission>
     )

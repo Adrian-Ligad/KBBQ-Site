@@ -7,7 +7,6 @@ const TestiPage = styled.div`
     height:47em;
     background: #white;
 `
-// Header
 const TestimonyHeader = styled.div`
     height:7em;
     text-decoration: underline;
@@ -19,7 +18,6 @@ const TestimonyHeader = styled.div`
     justify-content: center;
     align-items: center;
 `
-//Content
 
 const TestimonyContent = styled.div`
     display: flex;
@@ -28,21 +26,20 @@ const TestimonyContent = styled.div`
     width:100%;
     height:100%;
 `
-//Modal page stylings
 
 const TestiGallery = styled.div`
     width: 90%;
     padding: 20px;
 `
 
-//Submissions Page stylings
-
 const TestiSubmission = styled.div`
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     width: 50%;
     padding: 20px;
     display: flex;
     flex-direction: column;
     background: #E8E8E8;
+    align-items: center;
 `
 const TestiSubmissionHeader = styled.div`
     font-size: 20px;
@@ -55,6 +52,7 @@ const TestiSubmissionContent = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
 
 `
 
@@ -78,11 +76,33 @@ const TestiInput = styled.textarea`
     padding: 10px;
     margin: 10px;
     overflow: hidden;
+    &:focus {
+        border: 1px solid;
+        outline-color: #EEE8AA;
+    }
 `
 
-const TestiSubmit = styled.div`
+const TestiSubmit = styled.button`
     display: flex;
+    outline: none;
     justify-content: center;
+    font-weight: bold;
+    width: 20%;
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.19);
+    text-decoration: none;
+    &:hover {
+        transition: 0.1s ease-in;
+        background-color: #EEE8AA;
+    }
+    &:active {
+        transition: 0.05s linear;
+        box-shadow: 0 1px #666;
+        transform: translateY(1px);
+
+    }
 `
 
 export {

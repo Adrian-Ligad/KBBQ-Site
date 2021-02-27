@@ -9,7 +9,7 @@ export default function HamMenu({ isOpen, closeMenu, scroll }) {
                 <Link to = "/menu" onClick = {() => closeMenu()}>Menu</Link>
                 <Link to = "/about" onClick = {() => closeMenu()}>About</Link>
                 <Link to = "/contact" onClick = {() => closeMenu()}>Contact Us</Link>
-                <Link to = "/testimonies" onClick = {() => closeMenu()}>Testimonies</Link>
+                <Link to = "/reviews" onClick = {() => closeMenu()}>Reviews</Link>
             </StyledMenu>
     )
 }
