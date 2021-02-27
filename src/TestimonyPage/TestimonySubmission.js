@@ -13,6 +13,7 @@ export default function TestimonySubmission() {
     return(
         <TestiSubmission>
             <TestiSubmissionHeader>
+            Want your opinion to be shared? Submit your reviews here!
             </TestiSubmissionHeader>
             <TestiSubmissionContent>
                 <form style = {{width: "100%"}}>
