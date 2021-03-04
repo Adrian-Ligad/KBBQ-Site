@@ -9,7 +9,6 @@ const AboutPageWrapper = styled.div`
     align-items:center;
 `
 
-//for title page and picture in About Page
 const AboutPageStory = styled.div`
     background-image: url('${SteveHotty}');
     background-attachment: fixed;
@@ -43,8 +42,7 @@ const AboutPageArrowDown = styled(AboutPageStoryContent)`
 const AboutPageDescription = styled.div`
     width:100%;
     height:70em;
-    color:white;
-    background: #404040;
+    background: #F5F5F5;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -67,7 +65,7 @@ const DescriptionContent = styled.div`
     width:40%;
     letter-spacing:2px;
     font-size:18px;
-    color:white;
+    color:black;
 `
 
 export { 

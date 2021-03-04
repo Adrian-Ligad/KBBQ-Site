@@ -1,11 +1,18 @@
-import WriteYelp from './WriteYelp'
-import Reviews from './Reviews'
+import { TestiPage, TestimonyHeader, TestimonyContent} from './TestimonyPage.styled'
+
+import TestimonyGallery from './TestimonyModal'
+import TestimonySubmission from './TestimonySubmission'
 
 export default function TestimonyPage() {
     return (
-        <div className = "TestimonyPage">
-            <WriteYelp/>
-            <Reviews/>
-        </div>
+        <TestiPage>
+            <TestimonyHeader>
+                Reviews
+            </TestimonyHeader>
+            <TestimonyContent>
+                <TestimonyGallery/>
+                <TestimonySubmission/>
+            </TestimonyContent>
+        </TestiPage>
     )
 }

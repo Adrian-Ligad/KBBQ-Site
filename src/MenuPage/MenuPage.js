@@ -1,4 +1,16 @@
-import { MenuContainer, MenuHeader, MenuContent, MenuRow, MenuBox, MenuBoxAlt, MenuPicture, MenuPictureAlt, MenuItem } from './MenuPage.styled'
+import { MenuContainer, MenuHeader, MenuContent, MenuRow, MenuBox, MenuBoxAlt, MenuPicture, ComboHeader, MenuPictureParallax } from './MenuPage.styled'
+
+//For menu items containers
+import { menuItems1, menuItems2, menuItems3, menuItems4, menuItems5 } from './menuItems'
+
+import MenuItems from './MenuItem'
+
+//Pictures to be used for picture box
+import kbbq1 from '../pictures/kbbq1.jpg'
+import kbbq2 from '../pictures/kbbq2.jpg'
+import kbbq3 from '../pictures/kbbq3.jfif'
+import kbbq4 from '../pictures/kbbq4.jpg'
+import kbbq5 from '../pictures/kbbq5.jfif'
 
 export default function MenuPage() {
     return (
@@ -9,68 +21,34 @@ export default function MenuPage() {
             <MenuContent>
                 <MenuRow>
                     <MenuBox>
-                        <MenuItem menuItemTitle = "wine_"> 
-                            red wine  (in moderation), lowers the risk of heart disease, and 
-                            opens blood vessels for better circulation.
-                        </MenuItem>
-                        <MenuItem menuItemTitle = "original_">
-                        all natural with no additives.
-                        unveiling pork’s natural flavors, rich in vitamin B1.
-                        </MenuItem> 
-                        <MenuItem menuItemTitle = "miso paste_">
-                        is rich in flavor and beneficial in circulating the body’s natural biochemistry.                     
-                        </MenuItem>
-                        <MenuItem menuItemTitle = "ginseng_">
-                        stimulates the metabolism and promotes general wellness and health.
-                        </MenuItem>
-                        <MenuItem menuItemTitle = "garlic_">
-                        garlic lowers cholesterol and high blood pressure and helps the body’s natural flow and simply taste damn good!!!
-                        </MenuItem>
-                        <MenuItem menuItemTitle = "herb_">
-                        natural herbs alleviate stress and depression.
-                        </MenuItem>
-                        <MenuItem menuItemTitle = "curry_">
-                        curry’s complex components helps prevent alzheimer’s disease, as well as certain cancers.
-                        </MenuItem>
-                        <MenuItem menuItemTitle = "red pepper paste_">
-                        gochujang contains protein, healthy fats, vitamins B2, vitamin C and carotene.
-                        </MenuItem>
+                        {menuItems1.map(( item ) => <MenuItems menuItemTitle = {item.menuItemTitle} content = {item.content}/>)}
                     </MenuBox>
-                    <MenuPicture>
-
-                    </MenuPicture>
+                    <MenuPicture menuPic = {kbbq1}></MenuPicture>
                 </MenuRow>
                 <MenuRow>
-                    <MenuPictureAlt>
-
-                    </MenuPictureAlt>
+                    <MenuPicture> <MenuPictureParallax menuPic = {kbbq2}/> </MenuPicture>
                     <MenuBoxAlt>
-
+                        {menuItems2.map(( item ) => <MenuItems comboHeader = {item.comboHeader} content = {item.content}/>)}
                     </MenuBoxAlt>
                 </MenuRow>
                 <MenuRow>
                     <MenuBox>
-                        
+                        {menuItems3.map(( item ) => <MenuItems content = {item.content}/>)}
                     </MenuBox>
-                    <MenuPicture>
-
-                    </MenuPicture>
+                    <MenuPicture menuPic = {kbbq3}> </MenuPicture>
                 </MenuRow>
                 <MenuRow>
-                    <MenuPictureAlt>
-
-                    </MenuPictureAlt>
+                <MenuPicture>
+                        <MenuPictureParallax menuPic = {kbbq4}/> </MenuPicture>
                     <MenuBoxAlt>
-
+                        {menuItems4.map(( item ) => <MenuItems content = {item.content}/>)}
                     </MenuBoxAlt>
                 </MenuRow>
                 <MenuRow>
                     <MenuBox>
-                        
+                        {menuItems5.map(( item ) => <MenuItems content = {item.content}/>)}
                     </MenuBox>
-                    <MenuPicture>
-
-                    </MenuPicture>
+                    <MenuPicture menuPic = {kbbq5}> </MenuPicture>
                 </MenuRow>
             </MenuContent>
         </MenuContainer>
